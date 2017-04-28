@@ -1,0 +1,10 @@
+version: '2'
+services:
+  prom:
+    build: prom
+    ports:
+     - "9090:9090"
+  grafana:
+    build: grafana
+    ports:
+     - "3000:3000"

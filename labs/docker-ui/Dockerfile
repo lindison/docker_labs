@@ -1,0 +1,3 @@
+# Dockerfile
+
+FROM portainer/portainer
