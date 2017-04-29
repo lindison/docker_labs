@@ -27,4 +27,4 @@ scrape_configs:
   - job_name: 'prometheus'
     static_configs:
       - targets:
-           ['update_ipaddress:4914','update_ipaddress:9100','update_ipaddress:9093','update_ipaddress:8080','update_ipaddress:8443']
+           ['192.168.50.51:4914','192.168.50.51:9100','192.168.50.51:9093','192.168.50.51:8080','192.168.50.51:8443']
