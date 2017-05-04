@@ -9,6 +9,11 @@ apt-get install -y \
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
 chsh -s `which zsh`
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+add-apt-repository -y ppa:neovim-ppa/unstable
+apt-get update
+apt-get install -y neovim
+mkdir /root/.config
+curl -sLf https://spacevim.org/install.sh | bash
 sudo apt-key fingerprint 0EBFCD88
 
 sudo add-apt-repository \
