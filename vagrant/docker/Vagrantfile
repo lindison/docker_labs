@@ -1,0 +1,7 @@
+Vagrant.configure("2") do |config|
+  config.vm.provider "docker" do |d|
+    d.image = "lindison/hello-world:k8s"
+    d.ports = ['80:80', '443:443']
+    d.name = 'nginx-test'
+  end
+end

@@ -1,10 +1,13 @@
 apt-get remove docker docker-engine
 
 apt-get install -y \
+     zsh git-core wget \
      apt-transport-https \
      ca-certificates \
      curl \
      software-properties-common
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+chsh -s `which zsh`
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo apt-key fingerprint 0EBFCD88
 
