@@ -9,6 +9,7 @@ id_rsa.pub
 # Vagrant
 .vagrant/
 .vagrant/*
+ubuntu-yakkety-16.10-cloudimg-console.log
 
 # Operating System Files
 *.DS_Store
