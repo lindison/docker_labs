@@ -2,6 +2,9 @@
 # Githash endpoint
 git.properties
 
+# Visual Studio Code 
+settings.json
+
 # SSH KEYS
 id_rsa
 id_rsa.pub

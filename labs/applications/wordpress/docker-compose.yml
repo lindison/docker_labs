@@ -1,0 +1,22 @@
+--- 
+services: 
+  mysql: 
+    environment: 
+      MYSQL_DATABASE: wordpress
+      MYSQL_ROOT_PASSWORD: wordpress
+    image: mysql
+    restart: always
+    volumes: 
+      - "db_data:/var/lib/mysql"
+  wordpress: 
+    depends_on: 
+      - mysql
+    environment: 
+      WORDPRESS_DB_PASSWORD: wordpress
+    image: wordpress
+    ports: 
+      - "8080:80"
+    restart: always
+version: "3"
+volumes: 
+  db_data: ~
