@@ -4,6 +4,7 @@ git.properties
 
 # Visual Studio Code 
 settings.json
+.vscode/
 
 # SSH KEYS
 id_rsa
