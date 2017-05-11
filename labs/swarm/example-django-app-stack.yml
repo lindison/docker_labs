@@ -1,0 +1,10 @@
+version: '3'
+services:
+  db:
+    image: lindison/django_db:demo
+  web:
+    image: lindison/django_web:demo
+    ports:
+      - "8002:8000"
+    depends_on:
+      - db
