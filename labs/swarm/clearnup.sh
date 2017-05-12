@@ -11,3 +11,6 @@ docker service rm worker
 docker service rm uber
 docker service rm instagram
 docker service rm twitter
+docker service rm hello-world
+docker service rm wordpress_db
+docker service rm wordpress_wordpress
