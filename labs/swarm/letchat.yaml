@@ -1,0 +1,22 @@
+ApiVersion: '3'
+
+nginx:
+  image: aslaen/nginx_lchat
+  links:
+    - chat1:chat1
+    - chat2:chat2
+  ports:
+    - 85:80
+
+chat1:
+  image: sdelements/lets-chat
+  links:
+    - mongo
+
+chat2:
+  image: sdelements/lets-chat
+  links:
+    - mongo
+
+mongo:
+  image: mongo:latest
