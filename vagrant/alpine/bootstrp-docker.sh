@@ -16,9 +16,9 @@ cd /root
 git clone https://github.com/lindison/docker_labs.git
 cat >> /etc/hosts <<EOL
 
-192.168.50.51 node-1
-192.168.50.52 node-2
-192.168.50.53 node-3
+192.168.50.51 node-0
+192.168.50.52 node-1
+192.168.50.53 node-2
 
 EOL
 sleep 4

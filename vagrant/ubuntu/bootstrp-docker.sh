@@ -1,4 +1,4 @@
-apt-get remove docker docker-engine
+apt-get -y remove docker docker-engine
 
 apt-get install -y \
      zsh git-core wget \
