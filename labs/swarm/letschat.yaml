@@ -4,14 +4,21 @@ services:
   nginx:
     image: aslaen/nginx_lchat
     depends_on:
-      - chatapp
+      - chat1
+      - chat2
     ports:
       - 85:80
 
-  chatapp:
+  chat1:
     image: sdelements/lets-chat
     depends_on:
       - mongo
+
+  chat2:
+    image: sdelements/lets-chat
+    depends_on:
+      - mongo
+
 
   mongo:
     image: mongo:latest
