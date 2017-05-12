@@ -14,3 +14,4 @@ docker service rm twitter
 docker service rm hello-world
 docker service rm wordpress_db
 docker service rm wordpress_wordpress
+docker stack rm letschat
