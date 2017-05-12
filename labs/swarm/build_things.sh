@@ -12,3 +12,7 @@ docker service create --name vote -p 80:80 --network frontend --replicas 2 docke
 docker service create --name worker --network frontend --network backend dockersamples/examplevotingapp_worker
 docker service create --name db --network backend --mount type=volume,source=db-data,target=/var/lib/postgresql/data postgres:9.4
 docker service create --name result -p 5001:80 --network backend dockersamples/examplevotingapp_result:before
+docker service create --publish 90:8080 --name uber lindison/swagger-ui:uber
+docker service create --publish 91:8080 --name twitter lindison/swagger-ui:twitter
+docker service create --publish 92:8080 --name weather lindison/swagger-ui:weather
+docker service create --publish 93:8080 --name instagram lindison/swagger-ui:instagram
