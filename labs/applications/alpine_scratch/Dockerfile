@@ -1,2 +1,2 @@
 FROM scratch
-ADD . /
+ADD rootfs.tar.gz /
